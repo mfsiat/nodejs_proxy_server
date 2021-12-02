@@ -14,3 +14,7 @@ const limiter = rateLimit({
 app.use(limiter);
 app.set('trust proxy', 1);
 ```
+- Added cache control
+```js
+let cache = apicache.middleware
+```
