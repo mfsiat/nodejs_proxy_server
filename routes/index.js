@@ -20,6 +20,7 @@ router.get('/', async (req, res) => {
         const data = apiRes.body;
 
         // check wether prod or dev
+        // log request to the public api 
         if (process.env.NODE_ENV !== 'production'){
             console.log(`REQUEST: ${API_BASE_URL}?${params}`)
         }
